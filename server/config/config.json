@@ -1,0 +1,19 @@
+{
+  "test": {
+    "PORT": 3000,
+    "MONGODB_URI": "mongodb://localhost:27017/CompaniesAppTest",
+    "FACEBOOK_APP_SECRET": "a9ce391a7e9f34f80bbddca9bc82f946",
+    "FACEBOOK_APP_ID": "137259186868400",
+    "JWT_SECRET": "dwedwd",
+    "COOKIE_KEY": "dcsfs"
+  },
+
+  "development": {
+    "PORT": 3000,
+    "MONGODB_URI": "mongodb://localhost:27017/PrintServerApp",
+    "FACEBOOK_APP_SECRET": "a9ce391a7e9f34f80bbddca9bc82f946",
+    "FACEBOOK_APP_ID": "137259186868400",
+    "JWT_SECRET": "dwedwd",
+    "COOKIE_KEY": "dcsfs"
+  }
+}
