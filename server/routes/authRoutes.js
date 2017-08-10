@@ -37,7 +37,7 @@ module.exports = app => {
 				'password',
 				'mobilePhone'
 			]);
-			
+
 			await new User(body).save();
 
 			res.redirect('/');
