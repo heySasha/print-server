@@ -35,7 +35,11 @@ const UserSchema = new mongoose.Schema({
             message: '{VALUE} is not a valid mobile phone'
         }
     },
-    facebookId: String
+    facebookId: String,
+    registerAt: {
+        type: Number,
+        default: new Date().getTime()
+    }
 });
 
 UserSchema.methods.toJSON = function () {

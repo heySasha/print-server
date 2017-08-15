@@ -5,7 +5,9 @@
     "FACEBOOK_APP_SECRET": "a9ce391a7e9f34f80bbddca9bc82f946",
     "FACEBOOK_APP_ID": "137259186868400",
     "JWT_SECRET": "dwedwd",
-    "COOKIE_KEY": "dcsfs"
+    "COOKIE_KEY": "dcsfs",
+    "LIQPAY_PUBLIC_KEY": "i61794609369",
+    "LIQPAY_PRIVATE_KEY": "cNgRh8CVnD3xAw58FGnXiBovdWGqgwSjVwebP7DE"
   },
 
   "development": {
@@ -14,6 +16,8 @@
     "FACEBOOK_APP_SECRET": "a9ce391a7e9f34f80bbddca9bc82f946",
     "FACEBOOK_APP_ID": "137259186868400",
     "JWT_SECRET": "dwedwd",
-    "COOKIE_KEY": "dcsfs"
+    "COOKIE_KEY": "dcsfs",
+    "LIQPAY_PUBLIC_KEY": "i61794609369",
+    "LIQPAY_PRIVATE_KEY": "cNgRh8CVnD3xAw58FGnXiBovdWGqgwSjVwebP7DE"
   }
 }
