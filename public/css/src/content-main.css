@@ -1,0 +1,158 @@
+.content-menu {
+  background: rgba(0, 0, 0, 0.7);
+  width: 210px;
+  height: 100%;
+  min-height: 100vh;
+  position: fixed; }
+  @media screen and (max-width: 1200px) {
+    .content-menu {
+      display: none; } }
+  .content-menu-short {
+    font-size: 70%;
+    border-top: 1px dashed #fff;
+    border-bottom: 1px dashed #fff;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+    .content-menu-short li a {
+      line-height: 20px !important; }
+  .content-menu-login {
+    margin-top: 10px; }
+    .content-menu-login a {
+      color: #fff;
+      text-decoration: none; }
+    .content-menu-login span {
+      color: #fff; }
+.content-login {
+  float: right;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 130%;
+  margin-top: 25px;
+  margin-right: 20px; }
+  @media screen and (max-width: 480px) {
+    .content-login {
+      text-align: center;
+      font-size: 100%; } }
+  .content-login span {
+    display: inline; }
+    @media screen and (max-width: 480px) {
+      .content-login span {
+        display: block; } }
+  .content-login a {
+    color: #fff;
+    text-decoration: none; }
+    .content-login a:hover {
+      color: #fff;
+      text-decoration: underline; }
+.content-header {
+  background: #dd2b1c;
+  padding: 5px 5px 5px 5px;
+  clear: both;
+  overflow: hidden; }
+  .content-header-contacts {
+    float: right;
+    color: #fff;
+    font-weight: 700;
+    font-size: 120%;
+    text-align: center;
+    line-height: 25px;
+    border-left: 2px solid #fff;
+    padding-left: 10px; }
+    @media screen and (max-width: 480px) {
+      .content-header-contacts {
+        font-size: 90%; } }
+  .content-header-help {
+    margin-left: 20px; }
+    @media screen and (max-width: 620px) {
+      .content-header-help {
+        margin-left: 5px; } }
+  .content-header-middle {
+    margin-left: 20px; }
+    @media screen and (max-width: 620px) {
+      .content-header-middle {
+        margin-left: 5px; } }
+    @media screen and (max-width: 590px) {
+      .content-header-middle {
+        margin-bottom: 5px; } }
+  .content-header-bottom {
+    background: #fff;
+    clear: both;
+    overflow: hidden;
+    padding: 5px; }
+    .content-header-bottom div {
+      float: right; }
+      .content-header-bottom div a {
+        display: inline-block;
+        text-decoration: none; }
+.content-main-wrapper {
+  width: 100%;
+  padding-left: 220px;
+  padding-right: 20px;
+  clear: both;
+  overflow: hidden;
+  padding-bottom: 10px; }
+  @media screen and (max-width: 1200px) {
+    .content-main-wrapper {
+      padding-left: 0;
+      padding-right: 0; } }
+  .content-main-wrapper_title {
+    color: #dd2b1c;
+    display: block;
+    font-size: 160%;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #dd2b1c;
+    padding-bottom: 10px;
+    padding-top: 50px; }
+    @media screen and (max-width: 960px) {
+      .content-main-wrapper_title {
+        text-align: center; } }
+.content-main-box {
+  display: inline-block;
+  vertical-align: top;
+  width: 19.5%;
+  box-sizing: border-box;
+  background: #fff;
+  margin-top: 10px;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #dedede;
+  transition: all ease-out 0.1s; }
+  .content-main-box:hover {
+    transform: scale(1.05);
+    transition: all ease-out 0.1s; }
+  @media screen and (max-width: 860px) {
+    .content-main-box {
+      width: 49.5%; } }
+  @media screen and (max-width: 580px) {
+    .content-main-box {
+      width: 100%;
+      display: block; } }
+  .content-main-box img {
+    width: 100%;
+    padding-bottom: 10px; }
+  .content-main-box a {
+    display: block;
+    text-decoration: none;
+    color: #dd2b1c; }
+  .content-main-box span {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 90%; }
+.content-contacts {
+  text-align: right;
+  padding-right: 10px;
+  padding-top: 10px;
+  color: #dd2b1c;
+  font-weight: 700;
+  line-height: 20px; }
+  @media screen and (max-width: 1200px) {
+    .content-contacts {
+      text-align: center;
+      padding-right: 0; } }
+
+/*# sourceMappingURL=content-main.css.map */

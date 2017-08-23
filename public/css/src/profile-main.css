@@ -1,0 +1,27 @@
+.profile-wrapper {
+  width: 100%;
+  max-width: 800px;
+  background: #f3f3f3;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 10px; }
+  .profile-wrapper li {
+    font-size: 120%;
+    margin-top: 10px;
+    color: #555; }
+    .profile-wrapper li span {
+      color: #868686;
+      font-weight: 700; }
+.profile-history {
+  margin-top: 20px; }
+  .profile-history .item-right {
+    float: right; }
+  .profile-history li {
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid #d2d2d2; }
+    .profile-history li p {
+      margin-top: 5px;
+      color: #555; }
+
+/*# sourceMappingURL=profile-main.css.map */

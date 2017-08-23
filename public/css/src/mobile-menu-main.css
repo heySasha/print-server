@@ -1,0 +1,15 @@
+.mobile-menu-btn {
+  background: transparent;
+  display: none;
+  width: 40px;
+  border-bottom: 22px double #dd2b1c;
+  border-top: 7px solid #dd2b1c;
+  content: "";
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 4px; }
+  @media screen and (max-width: 1200px) {
+    .mobile-menu-btn {
+      display: block; } }
+
+/*# sourceMappingURL=mobile-menu-main.css.map */

@@ -1,0 +1,26 @@
+.registration{
+	&-wrapper{
+		width: 100%;
+		max-width: 600px;
+		margin: 0 auto;
+		margin-top: 20px;
+		padding: 0 10px 10px 10px;
+		border: 1px solid #b1b1b1;
+		box-sizing: border-box;
+		text-align: center;
+	}
+	&-form{
+		input{
+			box-sizing: border-box;
+			width: 100%;
+			height: 40px;
+			border: 1px solid #f3f3f3;
+			border-bottom: 3px solid #dd2b1c;
+			margin-top: 10px;
+			padding-left: 10px;
+		}
+		button{
+			margin-top: 10px;
+		}
+	}
+}

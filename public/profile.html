@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="UTF-8">
+	<title>Document Print</title>
+	<meta name="description" content="">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=El+Messiri|PT+Sans|Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Forum|Lora" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One" rel="stylesheet">
+
+<body>
+
+    <nav class="pushy pushy-left">
+        <div class="pushy-content">
+            <a href="/"><img src="img/Logo_0011.png"></a>
+            <ul>
+                <li class="pushy-link"><a href="order.html">Замовлення</a></li>
+                <li class="pushy-link"><a href="#">Макети та матеріали</a></li>
+                <li class="pushy-link"><a href="#">Продукти</a></li>
+                <li class="pushy-link"><a href="#">Контакти</a></li>
+                <li class="pushy-link"><a href="profile.html">Кабінет</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="site-overlay"></div>
+    
+    <div>  
+        <div class="content-menu">
+            <div class="title__menu-container">
+                <a href="#"><img src="img/Logo_0011.png"></a>
+                <ul>
+                    <li><a href="order.html">Замовлення</a></li>
+                    <li><a href="#">Макети та матеріали</a></li>
+                    <li><a href="#">Продукти</a></li>
+                    <li><a href="#">Контакти</a></li>
+                    <li><a href="#">Кабінет</a></li>
+                </ul>
+                <ul class="content-menu-short">
+                    <li><a href="#">Кабінет</a></li>
+                    <li><a href="#">Бюджет</a></li>
+                    <li><a href="#">Верстання</a></li>
+                    <li><a href="#">Макет</a></li>
+                    <li><a href="#">Допомога</a></li>
+                </ul>
+                <p class="content-menu-login">
+                    <a href="#">Реєстрація</a> <span>|</span> <a href="#">Вхід</a>
+                </p>
+            </div>
+        </div>
+
+
+        <div class="content-header-small">
+            <div class="mobile-menu-btn menu-btn">
+            </div>
+        </div>
+
+
+        <div class="content-contacts">
+            <span>docuprint@i.ua</span>&nbsp;&nbsp;
+            <span>+380 67 390 2088</span>&nbsp;&nbsp;
+            <span>+380 66 339 6053</span>&nbsp;
+        </div>
+
+        <!--template begin-->
+        
+        <div class="content-main-wrapper">
+            <h2 class="content-main-wrapper_title">Особистий профіль</h2>
+                
+            <div class="profile-wrapper">
+                <ul>
+                    <li>
+                        Ім'я: <span>{{name}}</span>
+                    </li>
+                    <li>
+                        E-mail: <span>{{email}}</span>
+                    </li>
+                    <li>
+                        Телефон: <span>{{phone}}</span>
+                    </li>
+                    <li>
+                        Пароль: <span>{{password}}</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="profile-history">
+                <h2 class="title_sub">Історія замовлень</h2>
+
+                <ul>
+                    <!--foreach item-->
+                    <li class="clearfix">
+                        <p class="item-right green">Статус: <span class="caption">{{status}}</span></p>
+                        <p class="item">ID: <span class="caption">{{id}}</span></p>
+                        <p class="item">Назва: <span class="caption">{{title}}</span></p>
+                        <p class="item">Ціна: <span class="caption">{{price}}</span></p>
+                        <p class="item">Дата: <span class="caption">{{date}}</span></p>
+                    </li>
+                    <!--/foreach-->
+
+                    <li class="clearfix">
+                        <p class="item-right green">Статус: <span class="caption">{{status}}</span></p>
+                        <p class="item">ID: <span class="caption">{{id}}</span></p>
+                        <p class="item">Назва: <span class="caption">{{title}}</span></p>
+                        <p class="item">Ціна: <span class="caption">{{price}}</span></p>
+                        <p class="item">Дата: <span class="caption">{{date}}</span></p>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!--template end-->
+
+
+    </div>
+    
+<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>

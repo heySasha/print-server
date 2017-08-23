@@ -11,7 +11,7 @@
   },
 
   "development": {
-    "PORT": 3000,
+    "PORT": 5000,
     "MONGODB_URI": "mongodb://localhost:27017/PrintServerApp",
     "FACEBOOK_APP_SECRET": "a9ce391a7e9f34f80bbddca9bc82f946",
     "FACEBOOK_APP_ID": "137259186868400",
