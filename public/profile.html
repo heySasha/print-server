@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=El+Messiri|PT+Sans|Roboto" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Forum|Lora" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One" rel="stylesheet">
@@ -73,18 +74,18 @@
                 
             <div class="profile-wrapper">
                 <ul>
-                    <li>
+                    <li data-name="name">
                         Ім'я: <span>{{name}}</span>
                     </li>
-                    <li>
+                    <li data-name="email">
                         E-mail: <span>{{email}}</span>
                     </li>
-                    <li>
+                    <li data-name="mobilePhone">
                         Телефон: <span>{{phone}}</span>
                     </li>
-                    <li>
+                    <!--<li data-name="password">
                         Пароль: <span>{{password}}</span>
-                    </li>
+                    </li>-->
                 </ul>
             </div>
 
@@ -122,7 +123,19 @@
 <script type="text/javascript" src="js/main.js"></script>
 
 <script>
+    axios.get('/profile').then(res => {
+        const profileItems = document.querySelectorAll('.profile-wrapper li');
 
+
+        Array.from(profileItems).forEach(item => {
+           let name = item.dataset['name'];
+           if (name in res.data) {
+               item.querySelector('span').textContent = res.data[name];
+           } else {
+               item.querySelector('span').textContent = res.data[name] = '-';
+           }
+        });
+    });
 </script>
 </body>
 </html>
