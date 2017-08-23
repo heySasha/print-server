@@ -299,6 +299,21 @@ ul {
   clear: both;
   visibility: hidden; }
 
+.facebook-btn {
+  background: #3b5998;
+  font-weight: 700;
+  border-radius: 3px;
+  border: none;
+  color: #fff;
+  padding: 5px;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all ease-out 0.2s; }
+  .facebook-btn:hover {
+    opacity: 0.5;
+    transition: all ease-out 0.2s; }
+
 /*# sourceMappingURL=helpers-main.css.map */
  .mobile-menu-btn {
   background: transparent;
@@ -546,6 +561,9 @@ ul {
   border: 1px solid #b1b1b1;
   box-sizing: border-box;
   text-align: center; }
+  .registration-wrapper .separator-login {
+    display: block;
+    margin: 10px 0 10px 0; }
 .registration-form input {
   box-sizing: border-box;
   width: 100%;
@@ -556,6 +574,15 @@ ul {
   padding-left: 10px; }
 .registration-form button {
   margin-top: 10px; }
+.registration-form-facebook {
+  border: 1px solid #d2d2d2;
+  padding: 10px;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 10px; }
+  @media screen and (max-width: 640px) {
+    .registration-form-facebook {
+      width: 100%; } }
 
 /*# sourceMappingURL=registration-main.css.map */
  /* http://meyerweb.com/eric/tools/css/reset/ 

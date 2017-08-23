@@ -1,0 +1,29 @@
+extends src/layout
+
+block content
+    include src/pushy-left
+    div
+        include src/menu-container
+        // template begin
+        .content-main-wrapper
+            h2.content-main-wrapper_title Особистий профіль
+            .profile-wrapper
+                ul
+                    li
+                        | Ім'я:
+                        span= ` ${user.name}`
+                    li
+                        | E-mail:
+                        span= ` ${user.email}`
+                    li
+                        | Телефон:
+                        span= ` ${user.mobilePhone || '-'}`
+                    //li
+                    //    | Пароль:
+                    //    span #{password}
+            .profile-history
+                h2.title_sub Історія замовлень
+                ul
+                    // foreach item
+                    include src/some-order
+                    // /foreach

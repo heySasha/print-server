@@ -47,4 +47,19 @@
   clear: both;
   visibility: hidden; }
 
+.facebook-btn {
+  background: #3b5998;
+  font-weight: 700;
+  border-radius: 3px;
+  border: none;
+  color: #fff;
+  padding: 5px;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all ease-out 0.2s; }
+  .facebook-btn:hover {
+    opacity: 0.5;
+    transition: all ease-out 0.2s; }
+
 /*# sourceMappingURL=helpers-main.css.map */

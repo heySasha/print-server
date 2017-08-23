@@ -1,0 +1,25 @@
+extends src/layout
+
+block content
+    body
+        include src/pushy-left
+        div
+            include src/menu-container
+            // template begin
+            .content-main-wrapper
+                h2.content-main-wrapper_title Увійти на сайт
+                .registration-wrapper
+                    form.registration-form(id='login-form')
+                        input#email(type='email', name='email', placeholder='Введіть e-mail')
+                        input#password(type='text', name='password', placeholder='Введіть пароль')
+                        button.button-red(type='submit') Увійти
+                    span.separator-login або
+                    .registration-form-facebook
+                        p Увійти за допомогою Facebook
+                        a(href='/login/facebook')
+                            button.facebook-btn
+                                | Увійти з Facebook
+            // template end
+
+block scripts
+    script(src='/js/login.js')

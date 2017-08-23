@@ -1,0 +1,20 @@
+extends src/layout
+
+block content
+    include src/pushy-left
+    div
+        include src/menu-container
+        // template begin
+        .content-main-wrapper
+            h2.content-main-wrapper_title Реєстрація
+            .registration-wrapper
+                form.registration-form(id='registration-form')
+                    input#name(type='text', name='name', placeholder="Ім'я")
+                    input#email(type='email', name='email', placeholder='E-mail')
+                    input#phone(type='tel', name='phone', placeholder='Телефон')
+                    input#password(type='text', name='password', placeholder='Введіть пароль')
+                    input#password-confirm(type='text', name='password-confirm', placeholder='Введіть пароль (повторно)')
+                    input.button-red(type='submit', value='Зареєструватись')
+
+block scripts
+    script(src='/js/register.js')

@@ -11,8 +11,13 @@ const passport = require('passport');
 
 const app = express();
 
+app.set('views', path.resolve(__dirname, 'views'));
+app.set('view engine', 'pug');
+
 app.use(bodyParser.json());
 app.use(cors());
+
+
 
 app.use(
     cookieSession({
@@ -29,10 +34,14 @@ require('./routes/orderRoutes')(app);
 
 
 
-app.use(express.static( path.resolve('./public') ));
+app.use(express.static( path.resolve(__dirname, 'public') ));
+
+app.get('/', function (req, res) {
+    res.render('index', { user: req.user });
+});
 
 app.get('*', (req, res) => {
-    res.sendFile(path.resolve('./public', 'index.html'));
+    res.redirect('/');
 });
 
 app.listen(process.env.PORT, () => {

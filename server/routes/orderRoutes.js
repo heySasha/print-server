@@ -63,4 +63,8 @@ module.exports = app => {
 			res.status(500).send();
 		}
 	});
+
+	app.get('/order', (req, res) => {
+		res.render('order', { user: req.user });
+	});
 };

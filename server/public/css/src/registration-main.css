@@ -7,6 +7,9 @@
   border: 1px solid #b1b1b1;
   box-sizing: border-box;
   text-align: center; }
+  .registration-wrapper .separator-login {
+    display: block;
+    margin: 10px 0 10px 0; }
 .registration-form input {
   box-sizing: border-box;
   width: 100%;
@@ -17,5 +20,14 @@
   padding-left: 10px; }
 .registration-form button {
   margin-top: 10px; }
+.registration-form-facebook {
+  border: 1px solid #d2d2d2;
+  padding: 10px;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 10px; }
+  @media screen and (max-width: 640px) {
+    .registration-form-facebook {
+      width: 100%; } }
 
 /*# sourceMappingURL=registration-main.css.map */

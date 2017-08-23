@@ -5,14 +5,14 @@ const { User } = require('../models/user');
 
 module.exports = app => {
 	app.get('/login', (req, res) => {
-		res.send('Login');
+		res.render('login', { user: req.user });
 	});
 
 	app.post(
 		'/login',
 		passport.authenticate('local', { failureRedirect: '/login' }),
 		(req, res) => {
-			res.redirect('/');
+			res.status(200).send();
 		}
 	);
 
@@ -25,9 +25,13 @@ module.exports = app => {
 		'/profile',
 		require('connect-ensure-login').ensureLoggedIn(),
 		(req, res) => {
-			res.send(req.user);
+			res.render('profile', { user: req.user });
 		}
 	);
+
+	app.get('/register', (req, res) => {
+		res.render('register', { user: req.user });
+	});
 
 	app.post('/signin', async (req, res) => {
 		try {
@@ -40,7 +44,7 @@ module.exports = app => {
 
 			await new User(body).save();
 
-			res.redirect('/');
+            res.status(200).send();
 		} catch (err) {
 			res.status(400).send();
 		}

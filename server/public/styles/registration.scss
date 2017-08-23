@@ -8,6 +8,11 @@
 		border: 1px solid #b1b1b1;
 		box-sizing: border-box;
 		text-align: center;
+
+		.separator-login{
+			display: block;
+			margin: 10px 0 10px 0; 
+		}
 	}
 	&-form{
 		input{
@@ -21,6 +26,17 @@
 		}
 		button{
 			margin-top: 10px;
+		}
+
+		&-facebook{
+			border: 1px solid #d2d2d2; 
+			padding: 10px;
+			width: 50%;
+    		margin: 0 auto;
+    		border-radius: 10px;
+    		@media screen and (max-width: 640px){
+				width: 100%;
+			}
 		}
 	}
 }

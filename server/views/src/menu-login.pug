@@ -1,0 +1,7 @@
+p.content-menu-login
+    if !user
+        a(href='/register') Реєстрація
+        span |
+        a(href='/login') Вхід
+    else
+        a(href='/logout') Вийти
