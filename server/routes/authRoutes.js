@@ -2,6 +2,7 @@ const passport = require('passport');
 const _ = require('lodash');
 
 const { User } = require('../models/user');
+const { Order } = require('../models/order');
 
 module.exports = app => {
 	app.get('/login', (req, res) => {
@@ -24,8 +25,15 @@ module.exports = app => {
 	app.get(
 		'/profile',
 		require('connect-ensure-login').ensureLoggedIn(),
-		(req, res) => {
-			res.render('profile', { user: req.user });
+        async (req, res) => {
+			const orders = await Order.find({
+				_client: req.user._id
+			}) || [];
+
+			res.render('profile', {
+				user: req.user,
+				orders
+			});
 		}
 	);
 

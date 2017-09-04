@@ -1,16 +1,16 @@
 li.clearfix
     p.item-right.green
         | Статус:
-        span.caption {{status}}
+        span.caption= ` ${order.status}`
     p.item
         | ID:
-        span.caption {{id}}
+        span.caption= ` ${order.id}`
     p.item
         | Назва:
-        span.caption {{title}}
+        span.caption= ` ${order.name}`
     p.item
         | Ціна:
-        span.caption {{price}}
+        span.caption= ` ${order.price}`
     p.item
         | Дата:
-        span.caption {{date}}
+        span.caption= ` ${order.date}`

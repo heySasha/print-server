@@ -25,5 +25,11 @@ block content
                 h2.title_sub Історія замовлень
                 ul
                     // foreach item
-                    include src/some-order
+                    //[{status: 'Замовлено', id: '12584631', name: 'Banner', price: '2500', date: '12/05/2018'}]
+                    if !orders.length
+                        br
+                        p= 'Історія замовлень пуста'
+                    else
+                        each order in orders
+                            include src/some-order
                     // /foreach
