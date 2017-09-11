@@ -67,4 +67,8 @@ module.exports = app => {
 	app.get('/order', (req, res) => {
 		res.render('order', { user: req.user });
 	});
+
+	app.get('/order/make', (req, res) => {
+		res.render('makeorder', { user: req.user });
+	});
 };

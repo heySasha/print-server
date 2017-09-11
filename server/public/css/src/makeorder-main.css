@@ -1,0 +1,182 @@
+.makeorder-wrapper {
+  background: #fff;
+  width: 100%;
+  margin-top: 10px;
+  padding: 5px; }
+  .makeorder-wrapper-calc {
+    margin-top: 10px;
+    border: 1px solid #d2d2d2;
+    width: 100%;
+    text-align: center; }
+    .makeorder-wrapper-calc__form-row {
+      text-align: center;
+      padding-top: 10px; }
+      .makeorder-wrapper-calc__form-row .label-term {
+        font-size: 100%; }
+        @media screen and (max-width: 400px) {
+          .makeorder-wrapper-calc__form-row .label-term {
+            font-size: 85%; } }
+      .makeorder-wrapper-calc__form-row .half {
+        width: 49%;
+        display: inline-block;
+        vertical-align: top; }
+        @media screen and (max-width: 767px) {
+          .makeorder-wrapper-calc__form-row .half {
+            display: block;
+            width: 100%;
+            margin-top: 10px; } }
+      .makeorder-wrapper-calc__form-row h3 {
+        text-transform: uppercase;
+        font-size: 90%;
+        color: #dd2b1c;
+        text-align: center;
+        font-weight: 700;
+        margin: 10px; }
+    .makeorder-wrapper-calc__form-box {
+      width: 24.5%;
+      display: inline-block;
+      border: 1px solid #d8d8d8;
+      vertical-align: top;
+      text-align: center;
+      padding: 5px;
+      min-height: 170px; }
+      @media screen and (max-width: 767px) {
+        .makeorder-wrapper-calc__form-box {
+          display: block;
+          width: 100%;
+          margin-top: 10px;
+          min-height: auto; } }
+      .makeorder-wrapper-calc__form-box .input-size {
+        width: 70px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 5px; }
+      .makeorder-wrapper-calc__form-box img {
+        display: block;
+        width: 110px;
+        margin: 0 auto;
+        margin-top: 10px; }
+      .makeorder-wrapper-calc__form-box-small {
+        width: 19%;
+        display: inline-block;
+        border: 1px solid #d8d8d8;
+        vertical-align: top;
+        text-align: center;
+        padding: 5px;
+        min-height: 170px; }
+        @media screen and (max-width: 767px) {
+          .makeorder-wrapper-calc__form-box-small {
+            display: block;
+            width: 100%;
+            margin-top: 10px;
+            min-height: auto; } }
+        .makeorder-wrapper-calc__form-box-small .input-size {
+          width: 70px;
+          display: block;
+          margin: 0 auto;
+          margin-top: 5px; }
+        .makeorder-wrapper-calc__form-box-small img {
+          display: block;
+          width: 85px;
+          margin: 0 auto;
+          margin-top: 10px; }
+    .makeorder-wrapper-calc__form-button-count {
+      user-select: none;
+      cursor: pointer;
+      background: #dd2b1c;
+      color: #fff;
+      font-weight: 700;
+      width: 30px;
+      height: 25px;
+      display: inline-block;
+      line-height: 25px;
+      vertical-align: top; }
+    .makeorder-wrapper-calc__form-half-input {
+      height: 25px;
+      padding-left: 10px;
+      width: 70px; }
+    .makeorder-wrapper-calc__form-slider-wrapper {
+      width: 90%;
+      position: relative;
+      margin: 0 auto; }
+    .makeorder-wrapper-calc__form-slider {
+      margin-top: 35px; }
+    .makeorder-wrapper-calc__form-slider-number-0 {
+      left: 0;
+      top: -24px;
+      font-weight: 700;
+      position: absolute;
+      font-size: 90%; }
+    .makeorder-wrapper-calc__form-slider-number-15 {
+      left: 13%;
+      top: -22px;
+      position: absolute;
+      font-size: 80%; }
+    .makeorder-wrapper-calc__form-slider-number-25 {
+      left: 23%;
+      top: -22px;
+      position: absolute;
+      font-size: 80%; }
+    .makeorder-wrapper-calc__form-slider-number-30 {
+      left: 28%;
+      top: -22px;
+      position: absolute;
+      font-size: 80%; }
+    .makeorder-wrapper-calc__form-slider-number-50 {
+      left: 48%;
+      top: -24px;
+      font-weight: 700;
+      position: absolute;
+      font-size: 90%; }
+    .makeorder-wrapper-calc__form-slider-number-65 {
+      left: 63%;
+      top: -22px;
+      position: absolute;
+      font-size: 80%; }
+    .makeorder-wrapper-calc__form-slider-number-75 {
+      left: 73%;
+      top: -22px;
+      position: absolute;
+      font-size: 80%; }
+    .makeorder-wrapper-calc__form-slider-number-80 {
+      left: 78%;
+      top: -22px;
+      position: absolute;
+      font-size: 80%; }
+    .makeorder-wrapper-calc__form-slider-number-100 {
+      right: 0;
+      top: -24px;
+      font-weight: 700;
+      position: absolute;
+      font-size: 90%; }
+.makeorder-file-wrapper {
+  display: inline-block;
+  vertical-align: top;
+  width: 145px;
+  height: 50px;
+  line-height: 45px;
+  border-radius: 3px;
+  border: 2px solid #dd2b1c;
+  color: #dd2b1c;
+  background: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+  cursor: pointer; }
+  .makeorder-file-wrapper input[type="file"] {
+    width: 100%;
+    display: block;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer; }
+  .makeorder-file-wrapper span {
+    position: absolute;
+    display: block;
+    width: 100px;
+    left: 50%;
+    margin-left: -50px;
+    cursor: pointer; }
+.makeorder-np-wrapper {
+  padding: 10px; }
+
+/*# sourceMappingURL=makeorder-main.css.map */

@@ -62,4 +62,32 @@
     opacity: 0.5;
     transition: all ease-out 0.2s; }
 
+.center {
+  text-align: center; }
+
+.bold-link {
+  color: #111;
+  font-size: 105%;
+  letter-spacing: 1px;
+  font-weight: bold; }
+
+.none {
+  display: none !important; }
+
+.block {
+  display: block !important; }
+
+.m-t-10 {
+  margin-top: 10px; }
+
+.m-b-10 {
+  margin-bottom: 10px; }
+
+input[type="radio"] {
+  transform: scale(1.15);
+  cursor: pointer; }
+
+.noUi-horizontal .noUi-handle {
+  background: #dd2b1c; }
+
 /*# sourceMappingURL=helpers-main.css.map */

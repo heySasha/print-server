@@ -1,0 +1,163 @@
+extends src/layout
+
+block content
+    include src/pushy-left
+    div
+        include src/menu-container
+        // template begin
+        .content-main-wrapper
+            h2.content-main-wrapper_title Замовлення
+            .makeorder-wrapper
+                h2.title_sub Розрахувати замовлення
+                .makeorder-wrapper-calc
+                    form
+                        .makeorder-wrapper-calc__form-row
+                            h3 Строк виконання
+                            input#term1(type='radio', name='term', value='0.3')
+                            label.label-term(for='term1') 3 години
+                            input#term1(type='radio', name='term', value='1')
+                            label.label-term(for='term1') 1 день
+                            input#term2(type='radio', name='term', value='2')
+                            label.label-term(for='term1') 2 дні
+                            input#term5(type='radio', name='term', value='5')
+                            label.label-term(for='term1') 5 днів
+                        .makeorder-wrapper-calc__form-row
+                            h3 Формат виробу
+                            .makeorder-wrapper-calc__form-box
+                                input#paper1(type='radio', name='paper', value='1')
+                                label.label-term(for='paper1') A5 (148*210 mm)
+                                img(src='/img/icon/paper_ico1.jpg')
+                            .makeorder-wrapper-calc__form-box
+                                input#paper2(type='radio', name='paper', value='2')
+                                label.label-term(for='paper2') A4 (210*297 mm)
+                                img(src='/img/icon/paper_ico2.jpg')
+                            .makeorder-wrapper-calc__form-box
+                                input#paper2(type='radio', name='paper', value='3')
+                                label.label-term(for='paper2') 170*240 mm
+                                img(src='/img/icon/paper_ico3.jpg')
+                            .makeorder-wrapper-calc__form-box
+                                input#paper2(type='radio', name='paper', value='4')
+                                label.label-term(for='paper2') Інший розмір
+                                input.input-size(type='text', name='YpaperSize', placeholder='Y mm')
+                                input.input-size(type='text', name='XpaperSize', placeholder='X mm')
+                        .makeorder-wrapper-calc__form-row
+                            h3 кольоровість друка блоку
+                            .makeorder-wrapper-calc__form-box
+                                input#color-block1(type='radio', name='color-block', value='1')
+                                label.label-term(for='color-block1') Чорно-біла
+                                img(src='/img/icon/cover-block-ico1.jpg')
+                            .makeorder-wrapper-calc__form-box
+                                input#color-block2(type='radio', name='color-block', value='2')
+                                label.label-term(for='color-block2') Повнокольорова
+                                img(src='/img/icon/cover-block-ico2.jpg')
+                        .makeorder-wrapper-calc__form-row
+                            h3 Кольоровість друку обкладинки
+                            .makeorder-wrapper-calc__form-box-small
+                                input#print-cover1(type='radio', name='print-cover', value='1')
+                                label.label-term(for='print-cover1') 4+0
+                                img(src='/img/icon/color-cover-ico1.jpg')
+                            .makeorder-wrapper-calc__form-box-small
+                                input#print-cover2(type='radio', name='print-cover', value='1')
+                                label.label-term(for='print-cover2') 4+4
+                                img(src='/img/icon/color-cover-ico2.jpg')
+                            .makeorder-wrapper-calc__form-box-small
+                                input#print-cover3(type='radio', name='print-cover', value='1')
+                                label.label-term(for='print-cover3') 4+1
+                                img(src='/img/icon/color-cover-ico3.jpg')
+                            .makeorder-wrapper-calc__form-box-small
+                                input#print-cover4(type='radio', name='print-cover', value='1')
+                                label.label-term(for='print-cover4') 1+0
+                                img(src='/img/icon/color-cover-ico4.jpg')
+                            .makeorder-wrapper-calc__form-box-small
+                                input#print-cover5(type='radio', name='print-cover', value='1')
+                                label.label-term(for='print-cover5') 1+1
+                                img(src='/img/icon/color-cover-ico5.jpg')
+                        .makeorder-wrapper-calc__form-row
+                            .half
+                                h3 Кількість сторінок
+                                span.makeorder-wrapper-calc__form-button-count.js-cout-decr10 -10
+                                span.makeorder-wrapper-calc__form-button-count.js-cout-decr2 -2
+                                input.js-counter.makeorder-wrapper-calc__form-half-input(type='number', name='counter-page', value='200')
+                                span.makeorder-wrapper-calc__form-button-count.js-cout-incr2 +2
+                                span.makeorder-wrapper-calc__form-button-count.js-cout-incr10 +10
+                            .half
+                                h3 Тираж
+                                span.makeorder-wrapper-calc__form-button-count.js-edition-decr -10
+                                input.js-counter-edition.makeorder-wrapper-calc__form-half-input(type='number', name='counter-edition', value='100')
+                                span.makeorder-wrapper-calc__form-button-count.js-edition-incr +10
+                        .makeorder-wrapper-calc__form-row
+                            .half
+                                h3 Бумага блока (г/м2)
+                                input#paper-block1(type='radio', name='paper-block', value='1')
+                                label.label-term(for='paper-block1') Офсетна
+                                input#paper-block2(type='radio', name='paper-block', value='2')
+                                label.label-term(for='paper-block2') Мелована
+                                .makeorder-wrapper-calc__form-slider-wrapper
+                                    span.makeorder-wrapper-calc__form-slider-number-0 65
+                                    span.makeorder-wrapper-calc__form-slider-number-25 80
+                                    span.makeorder-wrapper-calc__form-slider-number-50 100
+                                    span.makeorder-wrapper-calc__form-slider-number-75 120
+                                    span.makeorder-wrapper-calc__form-slider-number-100 160
+                                    #block-slider.makeorder-wrapper-calc__form-slider
+                            .half
+                                h3 Бумага обкладинки (г/м2)
+                                input#cover-block1(type='radio', name='cover-block', value='1')
+                                label.label-term(for='cover-block1') Мелована
+                                input#cover-block2(type='radio', name='cover-block', value='2')
+                                label.label-term(for='cover-block2') Льон
+                                input#cover-block3(type='radio', name='cover-block', value='3')
+                                label.label-term(for='cover-block3') Офсетна
+                                input#cover-block4(type='radio', name='cover-block', value='4')
+                                label.label-term(for='cover-block4') Офсетна кольорова
+                                .makeorder-wrapper-calc__form-slider-wrapper
+                                    span.makeorder-wrapper-calc__form-slider-number-0 115
+                                    span.makeorder-wrapper-calc__form-slider-number-15 130
+                                    span.makeorder-wrapper-calc__form-slider-number-30 150
+                                    span.makeorder-wrapper-calc__form-slider-number-50 170
+                                    span.makeorder-wrapper-calc__form-slider-number-65 200
+                                    span.makeorder-wrapper-calc__form-slider-number-80 250
+                                    span.makeorder-wrapper-calc__form-slider-number-100 300
+                                    #cover-slider.makeorder-wrapper-calc__form-slider
+                        .makeorder-wrapper-calc__form-row
+                            h3 Ламінація обкладинки
+                            .makeorder-wrapper-calc__form-box-small
+                                input#lamination1(type='radio', name='lamination', value='1')
+                                label.label-term(for='lamination3') Без ламінації
+                                img(src='/img/icon/lam_ico1.jpg')
+                            .makeorder-wrapper-calc__form-box-small
+                                input#lamination2(type='radio', name='lamination', value='2')
+                                label.label-term(for='lamination3') Глянцева
+                                img(src='/img/icon/lam_ico2.jpg')
+                            .makeorder-wrapper-calc__form-box-small
+                                input#lamination3(type='radio', name='lamination', value='3')
+                                label.label-term(for='lamination3') Матова
+                                img(src='/img/icon/lam_ico3.jpg')
+                        button.button-red.m-t-10.m-b-10(type='submit') Розрахувати
+                .makeorder-wrapper-calc__form-row
+                    h3 Завантажики файл (PDF, TIFF, JPEG)
+                    .makeorder-file-wrapper
+                        span Блок
+                        input(type='file', name='file-block')
+                    .makeorder-file-wrapper
+                        span Обкладинка
+                        input(type='file', name='file-cover')
+                .makeorder-wrapper-calc__form-row
+                    h3 Інформація про замовника
+                    .registration-wrapper
+                        form.registration-form(id='', action='', method='POST')
+                            input#name(type='text', name='name', placeholder="Ім'я")
+                            input#email(type='email', name='email', placeholder='E-mail')
+                            input#phone(type='tel', name='phone', placeholder='Телефон')
+                            .makeorder-wrapper-calc__form-row
+                                h3 Оберіть спосіб доставки:
+                                input#js-np-false(type='radio', name='deliver', value='1')
+                                label.label-term(for='deliver1') Самовивіз
+                                input#js-np-true(type='radio', name='deliver', value='2')
+                                label.label-term(for='deliver2') Нова Пошта
+                                .makeorder-np-wrapper.js-np-wrapper.none
+                                    h3 Оберіть найближче відділення:
+                                    #np-map
+                                        button#npw-map-open-button(type='button') НАЙБЛИЖЧЕ ВІДДІЛЕННЯ
+                                        script(async='', defer='', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAPhm7Q29X5ldwjLtA7IMYHU_0xATiWK3A&language=ru')
+                            button.button-red(type='submit') Замовити
+        // template end

@@ -1,0 +1,236 @@
+.makeorder{
+	&-wrapper{
+		background: #fff;
+		width: 100%;
+		margin-top: 10px;
+		padding: 5px;
+
+		&-calc{
+			margin-top: 10px;
+			border: 1px solid #d2d2d2;
+			width: 100%;
+			text-align: center;		
+			&__form-row{
+				text-align: center;
+				padding-top: 10px;
+
+				.label-term{
+					font-size: 100%;
+					@media screen and (max-width: 400px){
+						font-size: 85%;
+					}
+				}
+
+				.half{
+					width: 49%;
+					display: inline-block;
+					vertical-align: top;
+					@media screen and (max-width: 767px){
+						display: block;
+						width: 100%;
+						margin-top: 10px;
+					}
+				}
+
+				h3{
+					text-transform: uppercase;
+					font-size: 90%;
+					color: #dd2b1c;
+					text-align: center;
+					font-weight: 700;
+					margin: 10px;
+				}
+			}
+
+			&__form-box{
+				width: 24.5%;
+				display: inline-block;
+				border: 1px solid #d8d8d8;
+				vertical-align: top;
+				text-align: center;
+				padding: 5px;
+				min-height: 170px;
+				@media screen and (max-width: 767px){
+					display: block;
+					width: 100%;
+					margin-top: 10px;
+					min-height: auto;
+				}
+
+				.input-size{
+					width: 70px;
+				    display: block;
+				    margin: 0 auto;
+				    margin-top: 5px;
+				}
+
+				img{
+					display: block;
+					width: 110px;
+					margin: 0 auto;
+					margin-top: 10px;
+				}
+
+				&-small{
+					width: 19%;
+					display: inline-block;
+					border: 1px solid #d8d8d8;
+					vertical-align: top;
+					text-align: center;
+					padding: 5px;
+					min-height: 170px;
+					@media screen and (max-width: 767px){
+						display: block;
+						width: 100%;
+						margin-top: 10px;
+						min-height: auto;
+					}
+
+					.input-size{
+						width: 70px;
+				    	display: block;
+				    	margin: 0 auto;
+				    	margin-top: 5px;
+					}
+
+					img{
+						display: block;
+						width: 85px;
+						margin: 0 auto;
+						margin-top: 10px;
+					}
+				}
+			}
+
+			&__form-button{
+				&-count{
+					user-select: none;
+					cursor: pointer;
+					background: #dd2b1c;
+					color: #fff;
+					font-weight: 700;
+					width: 30px;
+				    height: 25px;
+				    display: inline-block;
+				    line-height: 25px;
+				    vertical-align: top;
+				}
+			}
+
+			&__form-half-input{
+				height: 25px;
+				padding-left: 10px;
+				width: 70px;
+			}
+
+			&__form-slider-wrapper{
+				width: 90%;
+				position: relative;
+				margin: 0 auto;
+			}
+
+			&__form-slider{
+				margin-top: 35px;
+			}
+
+			&__form-slider-number{
+				&-0{
+					left:0;
+					top: -24px;
+					font-weight: 700;
+					position: absolute;
+					font-size: 90%;
+				}
+				&-15{
+					left:13%;
+					top: -22px;
+					position: absolute;
+					font-size: 80%;
+				}
+				&-25{
+					left:23%;
+					top: -22px;
+					position: absolute;
+					font-size: 80%;
+				}
+				&-30{
+					left:28%;
+					top: -22px;
+					position: absolute;
+					font-size: 80%;
+				}
+				&-50{
+					left:48%;
+					top: -24px;
+					font-weight: 700;
+					position: absolute;
+					font-size: 90%;
+				}
+				&-65{
+					left:63%;
+					top: -22px;
+					position: absolute;
+					font-size: 80%;
+				}
+				&-75{
+					left:73%;
+					top: -22px;
+					position: absolute;
+					font-size: 80%;
+				}
+				&-80{
+					left:78%;
+					top: -22px;
+					position: absolute;
+					font-size: 80%;
+				}
+				&-100{
+					right:0;
+					top: -24px;
+					font-weight: 700;
+					position: absolute;
+					font-size: 90%;
+				}
+			}
+		}
+	}
+
+	&-file{
+		&-wrapper{
+			display: inline-block;
+			vertical-align: top;
+			width: 145px;
+			height: 50px;
+			line-height: 45px;
+			border-radius: 3px;
+			border: 2px solid #dd2b1c;
+			color: #dd2b1c;
+			background: #fff;
+			font-weight: 700;
+			text-transform: uppercase;
+			position: relative;
+			cursor: pointer;
+			input[type="file"]{
+				width: 100%;
+			    display: block;
+			    height: 100%;
+			    opacity: 0;
+			    cursor: pointer;
+			}
+			span{
+				position: absolute;
+				display: block;
+			    width: 100px;
+			    left: 50%;
+			    margin-left: -50px;
+			    cursor: pointer;
+			}
+		}
+	}
+
+	&-np{
+		&-wrapper{
+			padding: 10px;
+		}
+	}
+}
