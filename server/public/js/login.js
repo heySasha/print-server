@@ -8,6 +8,6 @@ $( "#login-form" ).submit(event => {
         email: event.target.email.value,
         password: event.target.password.value
     }).then(res => {
-        location.href = '/';
+        location.href = '/profile';
     });
 });
